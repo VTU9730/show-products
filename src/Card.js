@@ -15,7 +15,7 @@ function CardComponent(props) {
             <li>Rating: {Math.floor(props.product.rating)}</li>
         </ul>
     </Card.Body>
-    <Button variant="primary" className='sm'>Buy</Button>
+    <Button variant="primary" onClick={()=>alert(`Congratulations! '${props.product.title}' Added to cart`)}>Buy</Button>
     </Card>
   );
 }
